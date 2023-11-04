@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MyQueueTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-11-04T05:41:09" hostname="MacBook-Air-12.lan" time="0.044">
+  <properties/>
+  <testcase name="testEnqueue()" classname="MyQueueTest" time="0.022"/>
+  <testcase name="testEnqueueWhenFull()" classname="MyQueueTest" time="0.002"/>
+  <testcase name="testDequeueWhenEmpty()" classname="MyQueueTest" time="0.002"/>
+  <testcase name="testPeek()" classname="MyQueueTest" time="0.001"/>
+  <testcase name="testDequeue()" classname="MyQueueTest" time="0.003"/>
+  <testcase name="testIsFull()" classname="MyQueueTest" time="0.001"/>
+  <testcase name="testIsEmpty()" classname="MyQueueTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
