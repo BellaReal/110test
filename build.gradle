@@ -1,6 +1,16 @@
 plugins {
     id 'java'
+    // id 'org.openjfx.javafxplugin' version '0.1.0'
 }
+
+// javafx {
+//     version = '21'
+//     modules = [ 'javafx.controls', 'javafx.fxml' ]
+//     platform = 'mac'
+//     configurations = [ 'implementation', 'testImplementation' ]
+// }
+
+
 
 java {
     toolchain {
@@ -10,6 +20,9 @@ java {
 
 repositories {
     mavenCentral()
+    flatDir {
+        dirs 'lib'
+    }
 }
 
 dependencies {
@@ -19,6 +32,7 @@ dependencies {
     testImplementation "org.junit.jupiter:junit-jupiter-api:$junitVersion"
     // This provides the TestEngine to actually run the tests.
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
+    implementation files('/Users/reesewhitlock/cse-110-project-team-19/lib/javafx-swt.jar', '/Users/reesewhitlock/cse-110-project-team-19/lib/javafx.base.jar', '/Users/reesewhitlock/cse-110-project-team-19/lib/javafx.controls.jar', '/Users/reesewhitlock/cse-110-project-team-19/lib/javafx.fxml.jar', '/Users/reesewhitlock/cse-110-project-team-19/lib/javafx.graphics.jar', '/Users/reesewhitlock/cse-110-project-team-19/lib/javafx.media.jar', '/Users/reesewhitlock/cse-110-project-team-19/lib/javafx.swing.jar', '/Users/reesewhitlock/cse-110-project-team-19/lib/javafx.web.jar', '/Users/reesewhitlock/cse-110-project-team-19/lib/json-20230227.jar')
 }
 
 test {
